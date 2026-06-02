@@ -78,7 +78,7 @@ const Navbar = () => {
         }`}
       >
         <Link to="/" onClick={closeMenu} className="text-lg uppercase tracking-widest">Home</Link>
-        <Link to="/Flavors" onClick={closeMenu} className="text-lg uppercase tracking-widest">Flavors</Link>
+        <Link to="/Flavors" onClick={closeMenu} className="text-lg uppercase tracking-widest">Products</Link>
         <Link to="/About" onClick={closeMenu} className="text-lg uppercase tracking-widest">About</Link>
         <Link to="/ContactUs" onClick={closeMenu} className="text-lg uppercase tracking-widest">Contact Us</Link>
         <Link to="/Account" onClick={closeMenu} className="text-lg uppercase tracking-widest">Account</Link>
