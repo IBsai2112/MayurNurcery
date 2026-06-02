@@ -5,10 +5,10 @@ import Home from './sections/Home'
 import Loader from "./components/loader" // Fixed path string case discrepancy
 import CartPage from './sections/cart'
 import Navbar from './components/navbar'
-import Flavors from './sections/flavors'
+import Flavors from './sections/Flavors'
 import About from './sections/About'
 import ContactUs from './sections/ContactUs'
-import Account from './sections/account'
+import Account from './sections/Account'
 // Import your Authentication components
 import SignIn from './Authentication/sign_in'
 import SignUp from './Authentication/sign_up'
