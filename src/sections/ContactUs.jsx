@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ContactPage = () => {
+  // --- WEB3FORMS CONFIGURATION ---
+  // Replace this placeholder string with your real generated key from web3forms.com
+  const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY_HERE";
+
   // Form State
   const [formData, setFormData] = useState({
     name: "",
@@ -11,22 +15,58 @@ const ContactPage = () => {
   });
   
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form logic here (e.g., API call)
-    setIsSubmitted(true);
-    
-    // Reset notification after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: "", email: "", contactNumber: "", message: "" });
-    }, 3000);
+    setIsSubmitting(true);
+
+    // Prepare the payload structured for Web3Forms API
+    const submissionData = {
+      access_key: WEB3FORMS_ACCESS_KEY,
+      name: formData.name,
+      email: formData.email,
+      phone: formData.contactNumber,
+      message: formData.message,
+      subject: `New GreenTail Inquiry from ${formData.name}`
+    };
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify(submissionData)
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setIsSubmitted(true);
+        // Reset the input fields on successful post
+        setFormData({ name: "", email: "", contactNumber: "", message: "" });
+      } else {
+        console.error("Web3Forms Submission Error:", result);
+        alert("Transmission failed. Please check your Access Key setup.");
+      }
+    } catch (error) {
+      console.error("Network Error during submission:", error);
+      alert("A connectivity error occurred. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+      
+      // Hide success notification layout popup window after 4 seconds
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 4000);
+    }
   };
 
   const fadeUpVariant = {
@@ -104,12 +144,12 @@ const ContactPage = () => {
 
               <div>
                 <h2 className="text-[9px] uppercase tracking-[.3em] font-bold text-[#55694a] mb-1">Digital Correspondence</h2>
-                <a href="mailto:mayurjadhav634@gmail.com" className="text-xl font-light hover:text-[#55694a] transition-colors font-serif lowercase italic">mayurjadhav634@gmail.com</a>
+                <a href="mailto:mayurjadhav634@gmail.com" className="text-xl font-light hover:text-[#55694a] transition-colors lowercase ">mayurjadhav634@gmail.com</a>
               </div>
 
               <div>
                 <h2 className="text-[9px] uppercase tracking-[.3em] font-bold text-[#55694a] mb-1">Digital Domain</h2>
-                <a href="https://www.greentail.studio" target="_blank" rel="noreferrer" className="text-xl font-light hover:text-[#55694a] transition-colors font-serif">www.greentail.studio</a>
+                <a href="https://www.greentail.studio" target="_blank" rel="noreferrer" className="text-xl font-light hover:text-[#55694a] transition-colors">www.greentail.studio</a>
               </div>
             </motion.div>
 
@@ -213,8 +253,12 @@ const ContactPage = () => {
                 </div>
 
                 <div className="pt-2">
-                  <button type="submit" className="w-full bg-[#2c3a25] text-[#e4e1db] py-4 rounded-xl text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-[#1c2317] transition-all shadow-md active:scale-[0.98]">
-                    Submit Ledger Inquiries
+                  <button 
+                    type="submit" 
+                    disabled={isSubmitting}
+                    className="w-full bg-[#2c3a25] text-[#e4e1db] py-4 rounded-xl text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-[#1c2317] transition-all shadow-md active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {isSubmitting ? "Transmitting Ledger..." : "Submit Ledger Inquiries"}
                   </button>
                 </div>
               </form>
