@@ -48,6 +48,12 @@ import vanilla2 from './Outdoor_Ficus.jpg';
 import vanilla3 from './Outdoor_Tecoma.jpg';
 import vanilla4 from './Outdoor_Bougainvillea.webp';
 
+// Hanging
+import Hang1 from './Hanging_Ferns.avif';
+import Hang2 from './Hanging_Moneyplant_Enjoy.webp';
+import Hang3 from './Hanging_Moneyplant_Green.webp';
+import Hang4 from './Hanging_Moneyplant_Marble.webp';
+
 
 export const flavorData = [
   {
@@ -116,20 +122,20 @@ export const flavorData = [
     id: "5",
     label: "Hanging",
     products: [
-      { id: 31, name: "French Vanilla", price: 400, img: vanilla1 },
-      { id: 32, name: "Vanilla Bean", price: 550, img: vanilla2 },
-      { id: 33, name: "Snowy Cream", price: 350, img: vanilla3 },
-      { id: 34, name: "White Velvet", price: 300, img: vanilla4 },
+      { id: 31, name: "Ferns", price: 400, img: Hang1 },
+      { id: 32, name: "Money Plant - Enjoy", price: 550, img: Hang2 },
+      { id: 33, name: "Money Plant - Green", price: 350, img: Hang3 },
+      { id: 34, name: "Money Plant - Marble", price: 300, img: Hang4 },
     ]
   },
    {
     id: "6",
     label: "Semi Shade",
     products: [
-      { id: 31, name: "French Vanilla", price: 400, img: vanilla1 },
-      { id: 32, name: "Vanilla Bean", price: 550, img: vanilla2 },
-      { id: 33, name: "Snowy Cream", price: 350, img: vanilla3 },
-      { id: 34, name: "White Velvet", price: 300, img: vanilla4 },
+      { id: 31, name: "French Vanilla", price: 400, img: Hang1 },
+      { id: 32, name: "Vanilla Bean", price: 550, img: Hang2 },
+      { id: 33, name: "Snowy Cream", price: 350, img: Hang3 },
+      { id: 34, name: "White Velvet", price: 300, img: Hang4 },
     ]
   }
 ];
