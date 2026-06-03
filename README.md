@@ -7,16 +7,15 @@ This project focuses on smooth animations, elegant minimalist typography, and a 
 ---
 
 ### 📸 Project Preview
-cooming soon
 <p align="center">
-  <img src="=" width="32%" />
-  <img src="" width="32%" />
-  <img src="" width="32%" />
+  <img src="https://github.com/IBsai2112/MayurNurcery/blob/e376060b52dcdcdb6ca7a2ebf4643fd7cc50d491/public/11.png" width="32%" />
+  <img src="https://github.com/IBsai2112/MayurNurcery/blob/e376060b52dcdcdb6ca7a2ebf4643fd7cc50d491/public/22.png" width="32%" />
+  <img src="https://github.com/IBsai2112/MayurNurcery/blob/e376060b52dcdcdb6ca7a2ebf4643fd7cc50d491/public/33.png" width="32%" />
 </p>
 <p align="center">
-  <img src="" width="32%" />
-  <img src="" width="32%" />
-  <img src="" width="32%" />
+  <img src="https://github.com/IBsai2112/MayurNurcery/blob/e376060b52dcdcdb6ca7a2ebf4643fd7cc50d491/public/44.png" width="32%" />
+  <img src="https://github.com/IBsai2112/MayurNurcery/blob/e376060b52dcdcdb6ca7a2ebf4643fd7cc50d491/public/55.png" width="32%" />
+  <img src="https://github.com/IBsai2112/MayurNurcery/blob/e376060b52dcdcdb6ca7a2ebf4643fd7cc50d491/public/66.png" width="32%" />
 </p>
 
 ---
