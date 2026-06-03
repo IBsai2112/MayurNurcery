@@ -85,7 +85,7 @@ const ContactPage = () => {
       initial={{ opacity: 0 }} 
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }} 
-      className="min-h-screen bg-gradient-to-br from-[#d2ce11/0] via-[#e4e1db] to-[#c6c2ba] pt-32 text-[#1c2317] relative overflow-hidden flex flex-col justify-between"
+      className="min-h-screen bg-gradient-to-br from-[#d2ce11/0] via-[#e4e1db] to-[#c6c2ba] pt-22 text-[#1c2317] relative overflow-hidden flex flex-col justify-between"
     >
       {/* Decorative Vector Plant Silhouette */}
       <div className="absolute top-10 right-[-5%] w-72 h-72 opacity-5 pointer-events-none select-none">
@@ -177,7 +177,7 @@ const ContactPage = () => {
                   className="absolute inset-0 flex flex-col items-center justify-center bg-black/20 hover:bg-black/40 transition-colors duration-300 text-center p-4"
                 >
                   <span className="text-[#e4e1db] text-[9px] uppercase font-bold tracking-[0.3em] bg-[#2c3a25] px-4 py-2.5 rounded-full border border-white/10 shadow-md">
-                    Open Glasshouse Location ↗
+                    Open GreenTail Location ↗
                   </span>
                 </a>
               </div>
