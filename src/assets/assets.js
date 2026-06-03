@@ -27,6 +27,20 @@ import chocolate9 from './Flowering_Ipomia.jpg';
 import chocolate10 from './Flowering_Ixora_Orange.webp';
 import chocolate11 from './Flowering_Jasmine.jpg';
 import chocolate12 from './Flowering_Spathiphyllum.webp';
+import chocolate13 from './Flowering_Chrysanthemum.webp';
+import chocolate14 from './Flowering_Gardenia.jpeg';
+import chocolate15 from './Flowering_Hibiscus.jpeg';
+import chocolate16 from './Flowering_Impatiens.jpeg';
+import chocolate17 from './Flowering_Ixora_Yellow.webp';
+import chocolate18 from './FLowering_Kalanchoes.jpeg';
+import chocolate19 from './Flowering_Lantana.jpg';
+import chocolate20 from './Flowering_Loropetalum.jpg';
+import chocolate21 from './Flowering_Mandevilla.jpeg';
+import chocolate22 from './Flowering_Passiflora.webp';
+import chocolate23 from './Flowering_Pentas.avif';
+import chocolate24 from './Flowering_Plumeria.webp';
+import chocolate25 from './Flowering_Poinsettia.jpg';
+import chocolate26 from './Flowering_Tecoma.avif';
 
 // outdoor
 import vanilla1 from './Outdoor_Althenthra.webp';
@@ -48,6 +62,20 @@ export const flavorData = [
       { id: 16, name: "Ixora_Orange", price: 500, img: chocolate10 },
       { id: 17, name: "Jasmine", price: 350, img: chocolate11 },
       { id: 18, name: "Spathiphyllum", price: 400, img: chocolate12 },
+      { id: 19, name: "Chrysanthemum", price: 450, img: chocolate13 },
+      { id: 20, name: "Gardenia", price: 500, img: chocolate14 },
+      { id: 21, name: "Hibiscus", price: 350, img: chocolate15 },
+      { id: 22, name: "Impatiens", price: 400, img: chocolate16 },
+      { id: 23, name: "Ixora_Yellow", price: 450, img: chocolate17 },
+      { id: 24, name: "Kalanchoes", price: 500, img: chocolate18 },
+      { id: 25, name: "Lantana", price: 350, img: chocolate19 },
+      { id: 26, name: "Loropetalum", price: 400, img: chocolate20 },
+      { id: 27, name: "Mandevilla", price: 450, img: chocolate21 },
+      { id: 28, name: "Passiflora", price: 500, img: chocolate22 },
+      { id: 29, name: "Pentas", price: 350, img: chocolate23 },
+      { id: 30, name: "Plumeria", price: 400, img: chocolate24 },
+      { id: 31, name: "Poinsettia", price: 450, img: chocolate25 },
+      { id: 32, name: "Tecoma", price: 500, img: chocolate26 },
     ]
   },
   {
