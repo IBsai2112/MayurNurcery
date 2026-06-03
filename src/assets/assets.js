@@ -54,6 +54,14 @@ import Hang2 from './Hanging_Moneyplant_Enjoy.webp';
 import Hang3 from './Hanging_Moneyplant_Green.webp';
 import Hang4 from './Hanging_Moneyplant_Marble.webp';
 
+// Semi Shade
+import Semi1 from './Semi_Petra_Croton.webp';
+import Semi2 from './Semi_Arelia.jpeg';
+import Semi3 from './Semi_Asparagus_sprengeri.jpeg';
+import Semi4 from './Semi_Plectranthus.jpg';
+import Semi5 from './Semi_Radermachera.jpg';
+import Semi6 from './Semi_Kalanchoes.webp';
+import Semi7 from './Semi_Succulents.jpg';
 
 export const flavorData = [
   {
@@ -132,10 +140,30 @@ export const flavorData = [
     id: "6",
     label: "Semi Shade",
     products: [
-      { id: 31, name: "French Vanilla", price: 400, img: Hang1 },
-      { id: 32, name: "Vanilla Bean", price: 550, img: Hang2 },
-      { id: 33, name: "Snowy Cream", price: 350, img: Hang3 },
-      { id: 34, name: "White Velvet", price: 300, img: Hang4 },
+      { id: 31, name: "Crossandra", price: 400, img: chocolate8 },
+      { id: 32, name: "Money Plant", price: 550, img: Hang2 },
+      { id: 33, name: "Ixora Orange", price: 350, img: chocolate10 },
+
+      { id: 34, name: "Petra Croton", price: 300, img: Semi1 },
+      { id: 34, name: "Arelia", price: 300, img: Semi2 },
+      { id: 34, name: "Asparagus sprengeri", price: 300, img: Semi3 },
+
+      { id: 34, name: "Hibiscus", price: 300, img: chocolate15 },
+      { id: 34, name: "Ixora Yellow", price: 300, img: chocolate17 },
+      { id: 34, name: "Impatiens", price: 300, img: chocolate16 },
+      
+      { id: 34, name: "Plectranthus", price: 300, img: Semi4 },
+      { id: 34, name: "Radermachera", price: 300, img: Semi5 },
+      { id: 34, name: "Kalanchoes", price: 300, img: Semi6 },
+
+      { id: 34, name: "Carnation", price: 300, img: chocolate7 },
+      { id: 34, name: "Pentas", price: 300, img: chocolate23 },
+      { id: 34, name: "Chrysanthemum", price: 300, img: chocolate13 },
+
+      { id: 34, name: "Succulents", price: 300, img: Semi7 },
+      { id: 34, name: "Begonia", price: 300, img: chocolate6 },
+      { id: 34, name: "Poinsettia", price: 300, img: chocolate25 },
+      
     ]
   }
 ];
